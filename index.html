@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
     <title>SignUpForm</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="lefthalf">
+            <div>
+                INDICA
+            </div>
+        </div>
+        <div class="righthalf">
+            <div class="main">
+                <form action="" class="form" id="signup">
+                    <h1>Let's do this!</h1>
+                    <div class="part">
+                        <div>
+                            <label for="fname">FIRST NAME</label>
+                            <input type="text" name="firstName" id="fname" required>
+                        </div>
+                        <div>
+                            <label for="lname">LAST NAME</label>
+                            <input type="text" name="lastName" id="lname" required>
+                        </div>
+                    </div>
+                    <div class="part">
+                        <div>
+                            <label for="userEmail">EMAIL</label>
+                            <input type="email" name="userEmail" id="userEmail" required>
+                        </div>
+                        <div>
+                            <label for="usermobile">PHONE NUMBER</label>
+                            <input type="tel" name="number" id="usermobile" required>
+                        </div>
+                    </div>
+                    <div class="part">
+                        <div>
+                            <label for="userpassword">PASSWORD</label>
+                            <input type="password" name="pass" id="userpassword" required>
+                        </div>
+                        <div>
+                            <label for="conpassword">CONFIRM PASSWORD</label>
+                            <input type="password" name="cpass" id="conpassword" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <button type="submit" form="signup">Create Account</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
