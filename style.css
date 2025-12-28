@@ -37,8 +37,9 @@ input, button, textarea, select {
     background-position: center;
     background-repeat: no-repeat;
     flex: 1;
+    position: relative;
 }
-.lefthalf > div{
+.icon{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
     font-family: 'Norse', serif;
@@ -82,7 +83,7 @@ h1{
     color: rgb(32, 30, 30);
 }
 input {
-    border: 1px solid rgb(125, 125, 125);
+    border: 2px solid rgb(125, 125, 125);
     border-radius: 4px;
 }
 button{
@@ -95,5 +96,46 @@ button{
     color: rgb(247, 243, 243);
     font-weight: 900;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
-    margin: 30px 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+button:hover{
+    background-color: #d98f5a;
+}
+button:active{
+    background-color: #c56b2c;
+    transform: scale(0.90);
+}
+input:focus{
+    outline: none;
+    border-color: #888;
+}
+input:user-invalid{
+    border-color: #e63946;
+    background: #e2caca;
+}
+input:user-invalid:focus{
+    border-color: #e63946;
+}
+.createAccount{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.log{
+    font-family: 'Inter', system-ui,sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #c56b2c;
+}
+.credit{
+    color: white;
+    font-size: xx-small;
+    font-weight: 800;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.credit > a{
+    color: white;   
 }
